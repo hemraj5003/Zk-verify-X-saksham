@@ -1,24 +1,6 @@
 import { Code, Target, Rocket, Globe, Award } from "lucide-react";
 import Link from "next/link";
 
-const TEAM_MEMBERS = [
-  {
-    name: "Harshal Malani",
-    linkedin: "https://linkedin.com/in/harshalmalani",
-  },
-  {
-    name: "Aman Tembhare",
-    linkedin: "https://linkedin.com/in/amantembhare",
-  },
-  {
-    name: "Hemraj Ghanchi",
-    linkedin: "https://linkedin.com/in/hemrajghanchi",
-  },
-  {
-    name: "Abhijeet Mate",
-    linkedin: "https://linkedin.com/in/abhijeetmate",
-  },
-];
 
 export const AboutUs = () => {
   return (
@@ -68,20 +50,7 @@ export const AboutUs = () => {
             Meet Our Innovative Team
           </h3>
           <div className="grid md:grid-cols-4 gap-8">
-            {TEAM_MEMBERS.map((member, index) => (
-              <div
-                key={index}
-                className="bg-gray-800 rounded-2xl p-6 transform transition hover:-translate-y-2 flex flex-col items-center"
-              >
-                <Link
-                  href={member.linkedin}
-                  target="_blank"
-                  className="text-white hover:text-blue-500 transition text-xl font-semibold"
-                >
-                  {member.name}
-                </Link>
-              </div>
-            ))}
+          
           </div>
         </div>
 
